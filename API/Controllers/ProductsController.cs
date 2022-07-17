@@ -81,7 +81,6 @@ namespace API.Controllers
         }
 
         [Authorize]
-        [Cached(600)]
         [HttpPost("addproduct")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]
@@ -114,7 +113,6 @@ namespace API.Controllers
         }
 
         [Authorize]
-        [Cached(600)]
         [HttpPost("updateproduct")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]
@@ -149,7 +147,6 @@ namespace API.Controllers
             }
         }
 
-        [Cached(600)]
         [HttpPut("deleteproduct")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]
