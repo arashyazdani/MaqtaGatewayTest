@@ -27,7 +27,7 @@ namespace API.Controllers
             _productService = productService;
         }
 
-        //[Authorize]
+        [Authorize]
         [Cached(600)]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]
@@ -56,7 +56,7 @@ namespace API.Controllers
             }
         }
 
-        //[Authorize]
+        [Authorize]
         [Cached(600)]
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
@@ -80,7 +80,7 @@ namespace API.Controllers
             }
         }
 
-        //[Authorize]
+        [Authorize]
         [Cached(600)]
         [HttpPost("addproduct")]
         [ProducesResponseType(StatusCodes.Status200OK)]
@@ -113,7 +113,7 @@ namespace API.Controllers
             }
         }
 
-        //[Authorize]
+        [Authorize]
         [Cached(600)]
         [HttpPost("updateproduct")]
         [ProducesResponseType(StatusCodes.Status200OK)]
@@ -176,7 +176,7 @@ namespace API.Controllers
             }
         }
 
-        //[Authorize]
+        [Authorize]
         [Cached(600)]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]
@@ -196,7 +196,7 @@ namespace API.Controllers
             }
         }
 
-        //[Authorize]
+        [Authorize]
         [Cached(600)]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]
